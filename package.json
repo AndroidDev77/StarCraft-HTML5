@@ -1,0 +1,13 @@
+{
+  "name": "starcraft-html5",
+  "version": "1.0.0",
+  "description": "HTML5 version of StarCraft game",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve .",
+    "build": "echo 'No build step required'"
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+}
