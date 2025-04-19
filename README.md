@@ -1,5 +1,8 @@
-# StarCraft
+# StarCraft HTML5
 HTML5 version for StarCraft game
+
+## Play Online
+You can play this game online at: [https://androiddev77.github.io/StarCraft-HTML5/](https://androiddev77.github.io/StarCraft-HTML5/)
 
 ## Version 1.0 includes below game elements:
 * Different units for Zerg/Terran/Protoss complete
@@ -22,91 +25,102 @@ The game entrance HTML5 page
 All HTML styles needed to draw button/menu/portrait/map
 
 ### Characters
-* **Gobj.js**  
+* **Gobj.js**
 The basic prototype for all the game types in StarCraft (move/stop/die/...)
-* **Units.js**  
+* **Units.js**
 The basic prototype for all units, Units extends Gobj, and AttackableUnit extends Units (attack/turnTo/escape/reaction/AI/...)
-* **Zerg.js**  
+* **Zerg.js**
 All Zerg units definition which extends Units
-* **Terran.js**  
+* **Terran.js**
 All Terran units definition which extends Units
-* **Protoss.js**  
+* **Protoss.js**
 All Protoss units definition which extends Units
-* **Hero.js**  
+* **Hero.js**
 All heroes definition which extends Units
-* **Neutral.js**  
+* **Neutral.js**
 All neutral creatures definition which extends Units
-* **Building.js**  
+* **Building.js**
 All building definition which extends Gobj, some are attackable
-* **Bullets.js**  
+* **Bullets.js**
 All bullets definition which extends Gobj
-* **Burst.js**  
+* **Burst.js**
 All burst effect definition which extends Gobj
-* **Animation.js**  
+* **Animation.js**
 All animation definition which extends Gobj
-* **Magic.js**  
+* **Magic.js**
 All magic definition
-* **Upgrade.js**  
+* **Upgrade.js**
 All upgrade definition
-* **Button.js**  
+* **Button.js**
 All used button definition and bind their callbacks
-* **Map.js**  
-Map relative definition:  
-Draw and move main map and mini map  
-Draw fogs on 2 maps  
-Draw special mud for Zerg buildings  
-Map refresh and relocation  
+* **Map.js**
+Map relative definition:
+Draw and move main map and mini map
+Draw fogs on 2 maps
+Draw special mud for Zerg buildings
+Map refresh and relocation
 
 ### GameRule
-* **Game.js**  
-The intro part of this game:  
-Controls the main drawing loop: draw units and bullets, draw magic animations and control panel, and will collect dead units as garbage  
-Load all needed resource into memory  
-Unit selection control  
-Game layer switch: loading->levelSelect->Gaming->Win or Lose  
-Message showing during game  
-Redraw task when browser window resize  
-* **Referee.js**  
-Mr.Referee will continuously judge game conditions:  
-  The announcement for resource insufficient or warning  
-  Game win or lose judgement  
-  Invisible units detect judgement  
-  Unit HP/MP recover  
-  Collision avoid  
-  Switch between single selection and multiple selection  
-* **Resource.js**  
+* **Game.js**
+The intro part of this game:
+Controls the main drawing loop: draw units and bullets, draw magic animations and control panel, and will collect dead units as garbage
+Load all needed resource into memory
+Unit selection control
+Game layer switch: loading->levelSelect->Gaming->Win or Lose
+Message showing during game
+Redraw task when browser window resize
+* **Referee.js**
+Mr.Referee will continuously judge game conditions:
+  The announcement for resource insufficient or warning
+  Game win or lose judgement
+  Invisible units detect judgement
+  Unit HP/MP recover
+  Collision avoid
+  Switch between single selection and multiple selection
+* **Resource.js**
 Resource relative js: including query cost and pay bill for several types of resource (mine/gas/man/magic)
-* **Cheat.js**  
+* **Cheat.js**
 Cheat code nearly the same as StarCraft, you can get resource freely or remove fog, upgrade all grades or full recovery, you can check this js by yourself
-* **Levels.js**  
+* **Levels.js**
 Basic levels to test this game, first 7 levels to test each units and buildings, campaign and Athena defence are basic RPG level
 
 ### Controller
-* **mouseController.js**  
+* **mouseController.js**
 Enable user to control the game by mouse click, double click and dragging
-* **keyController.js**  
+* **keyController.js**
 Enable user to control the game by keyboard: shortcut keys, ENTER, shift and CTRL
 
 ### Utils
-* **gFrame.js**  
+* **gFrame.js**
 The custom game framework for coding, use it for extends constructor, mixin objects or clone objects
-* **sourceLoader.js**  
+* **sourceLoader.js**
 Load all needed source utility
-* **jquery.min.js**  
+* **jquery.min.js**
 Jquery framework
 
 ### Img
-* **Charas**  
+* **Charas**
 All sprite images needed to draw units/buildings/bullets/burst/magic
-* **Menu**  
+* **Menu**
 All sprite images needed to draw menus, icons and cursor
-* **Maps**  
+* **Maps**
 All background SC maps, and mini-map sprite image
-* **Bg**  
+* **Bg**
 Game layer background
 
 ### bgm
 All needed sound effects, will later join them together and play each sound like sprite sound
 
-## The original code version 0.1 at:
+## How to Play
+- Click on units to select them
+- Right-click to move units
+- Right-click on enemy units to attack
+- Use the control panel at the bottom to build structures and train units
+- Try the cheat codes from the original StarCraft game!
+
+## Deployment
+This game is automatically deployed to GitHub Pages using GitHub Actions workflow whenever changes are pushed to the master branch.
+
+## Original Code
+The original code version 0.1 at:
 [http://www.nvhae.com/starcraft/](http://www.nvhae.com/starcraft/)
